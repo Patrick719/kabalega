@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Kabalega Secondary School</title>
+      <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header is the same as index.html -->
+    <header class="header">...</header>
+
+    <main class="section-padding">
+        <div class="container">
+            <h2>Online Application Form</h2>
+            <p>Please fill out the form below to apply for a place at Kabalega Secondary School. All fields marked with an asterisk (*) are required.</p>
+            
+            <div class="form-container">
+                <form id="application-form" action="php/process-application.php" method="POST">
+                    <h3>Student's Information</h3>
+                    <div class="form-group">
+                        <label for="student-name">Full Name *</label>
+                        <input type="text" id="student-name" name="student-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-applying">Class Applying For *</label>
+                        <select id="class-applying" name="class-applying" required>
+                            <option value="">--Select Class--</option>
+                            <option value="S1">Senior 1</option>
+                            <option value="S2">Senior 2</option>
+                            <option value="S5">Senior 5 (A-Level)</option>
+                        </select>
+                    </div>
+                    
+                    <hr style="margin: 2rem 0;">
+
+                    <h3>Parent/Guardian Information</h3>
+                    <div class="form-group">
+                        <label for="parent-name">Parent/Guardian Full Name *</label>
+                        <input type="text" id="parent-name" name="parent-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent-email">Email Address *</label>
+                        <input type="email" id="parent-email" name="parent-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent-phone">Phone Number *</label>
+                        <input type="tel" id="parent-phone" name="parent-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="previous-school">Previous School Attended</label>
+                        <input type="text" id="previous-school" name="previous-school">
+                    </div>
+
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
+                <div id="application-response" class="form-response"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer is the same as index.html -->
+    <footer class="footer">...</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

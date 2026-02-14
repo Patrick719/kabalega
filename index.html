@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabalega Secondary School - I Learn to Serve</title>
+    <!-- Link to your CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========== 1. HEADER & NAVIGATION ========== -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <!-- SCHOOL LOGO IS HERE. Make sure the path is correct! -->
+                <img src="images/logo.png" alt="Kabalega SS Logo"> Kabalega Secondary School
+            </a>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu for mobile devices -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <!-- ========== 2. HERO SECTION WITH SLIDESHOW ========== -->
+<section id="home" class="hero-slideshow">
+    <!-- Slides Container -->
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide" style="background-image: url('images/s-1.jpeg');">
+            <div class="hero-content">
+                <h1>Welcome to Kabalega Secondary School</h1>
+                <p>Nurturing future leaders with a legacy of academic excellence, discipline, and integrity.</p>
+                <a href="#admissions" class="btn btn-primary">Apply Now</a>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('images/s-3.jpeg');">
+            <div class="hero-content">
+                <h1>Excellence in Academics & Sports</h1>
+                <p>We provide a holistic environment for students to thrive in all areas of life.</p>
+                <a href="#academics" class="btn btn-primary">Explore Programs</a>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('images/img_684d152898a9a3.90185467.jpg');">
+            <div class="hero-content">
+                <h1>Join Our Proud Community</h1>
+                <p>Become part of a legacy of success and lifelong learning.</p>
+                <a href="#about" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <a class="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+    <!-- Dots Indicators -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+        <!-- ========== 3. ABOUT SECTION ========== -->
+        <section id="about" class="content-section section-padding">
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-history"></i> Our History</h3>
+                        <p>Founded on the principles of strength and wisdom, Kabalega SS has been a beacon of knowledge for decades, shaping the minds of generations.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                        <p>To provide a holistic education that empowers students to achieve their full potential and become responsible, innovative global citizens.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                        <p>To be a leading center of academic excellence, recognized for developing well-rounded individuals who make a positive impact on society.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 4. ALUMNI SECTION (NEW) ========== -->
+        <section id="alumni" class="content-section section-padding">
+            <div class="container">
+                <h2>Our Proud Alumni</h2>
+                <div class="card-grid">
+                    <div class="card alumni-testimonial">
+                        <blockquote>
+                            <p>"Kabalega SS gave me the discipline and foundation I needed to succeed in engineering. The teachers were not just educators; they were mentors who believed in my potential."</p>
+                        </blockquote>
+                        <cite>
+                            <strong>Dr. Amina Okello</strong><br>
+                            Class of 2005 | Lead Engineer, Tech Innovations Uganda
+                        </cite>
+                    </div>
+                    <div class="card alumni-testimonial">
+                        <blockquote>
+                            <p>"The values of integrity and leadership I learned at Kabaleega have guided me throughout my career in public service. I am forever grateful for my time there."</p>
+                        </blockquote>
+                        <cite>
+                            <strong>Hon. David Ssebunya</strong><br>
+                            Class of 1998 | Member of Parliament
+                        </cite>
+                    </div>
+                    <div class="card alumni-testimonial">
+                        <blockquote>
+                            <p>"From the debate club to the science labs, Kabalega SS encouraged us to explore our passions. It's where I discovered my love for medicine."</p>
+                        </blockquote>
+                        <cite>
+                            <strong>Dr. Samuel Nkonge</strong><br>
+                            Class of 2012 | Medical Doctor, Mulago Hospital
+                        </cite>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;">Are you an alumnus? We'd love to hear from you!</p>
+                    <a href="#" class="btn btn-primary">Join Our Network</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 5. ADMISSIONS SECTION ========== -->
+        <section id="admissions" class="section-padding" style="background-color: var(--light-grey);">
+            <div class="container">
+                <h2>Join Our Family</h2>
+                <div class="form-container">
+                    <form id="admissionForm">
+                        <div class="form-group">
+                            <label for="studentName">Student's Full Name</label>
+                            <input type="text" id="studentName" name="studentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Parent's Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Class Applying For</label>
+                            <select id="class" name="class" required>
+                                <option value="">Select a Class...</option>
+                                <option value="S1">Senior 1</option>
+                                <option value="S2">Senior 2</option>
+                                <option value="S3">Senior 3</option>
+                                <option value="S5">Senior 4</option>
+                                <option value="S5">Senior 5</option>
+                                <option value="S5">Senior 6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit Application</button>
+                    </form>
+                    <!-- This div will show success/error messages -->
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== 6. FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Kabalega s.s</h3>
+                    <p>I Learn to Serve, Big is Big</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 1234 Masindi-Kigumba Road, Uganda.</li>
+                        <li><i class="fas fa-phone"></i> +256 776636323</li>
+                        <li><i class="fas fa-envelope"></i> info@kabaleegass.ac.ug</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Kabalega Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="js/script.js"></script>
+    
+    <!-- Script to dynamically set the current year in the footer -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
