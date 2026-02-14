@@ -9,11 +9,11 @@
 
   /* --- Structure & Subtlety --- */
   --light-grey: #f8f9fa;         /* Very light grey for section backgrounds */
-  --border-grey: #dee2e6;        /* Standard grey for borders */
+  --border-grey: red;        /* Standard grey for borders */
   --muted-text: #6c757d;         /* Grey for less important text */
 
   /* --- Accent Colors --- */
-  --success-green: #28a745;      /* A vibrant green for key actions (Apply, Success) */
+  --success-green: red;      /* A vibrant green for key actions (Apply, Success) */
   --trust-blue: #007bff;         /* A trustworthy blue for secondary links/info */
 
   /* --- Typography --- */
@@ -117,7 +117,7 @@ a:hover {
     background-color: transparent;
     color: var(--success-green);
     transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(167, 40, 40, 0.3);
+    box-shadow: 0 4px 15px rgba(230, 25, 25, 0.3);
 }
 
 .btn-outline {
@@ -136,7 +136,7 @@ a:hover {
 
 /* --- 2. Header & Navigation --- */
 .header {
-  background-color: var(--pure-white);
+  background-color: rgb(253, 255, 255);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .nav-list a {
-  color: var(--deep-black);
+  color: red;
   font-weight: 700;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -252,7 +252,7 @@ a:hover {
   background-color: var(--pure-white);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  box-shadow: 0 5px 20px red;
   transition: all 0.3s ease;
   border: 1px solid var(--border-grey);
   display: flex;
@@ -261,7 +261,8 @@ a:hover {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px red;
+  color: red;
 }
 
 .card p {
@@ -304,7 +305,7 @@ a:hover {
   border-radius: 8px;
   font-size: 1rem;
   background-color: var(--light-grey);
-  color: var(--deep-black);
+  color: red;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -312,7 +313,7 @@ a:hover {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--trust-blue);
+  border-color: red;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 
@@ -326,18 +327,18 @@ a:hover {
 }
 .form-response.success {
     background-color: #d4edda;
-    color: #155724;
+    color: #f00a0a;
     border: 1px solid #c3e6cb;
 }
 .form-response.error {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: red;
+    color: #f40921;
     border: 1px solid #f5c6cb;
 }
 
 /* --- 6. Footer --- */
 .footer {
-  background-color: var(--deep-black);
+  background-color: var(--primary-red);
   color: var(--pure-white);
   text-align: center;
   padding: 60px 20px 30px;
@@ -351,7 +352,7 @@ a:hover {
 }
 
 .footer h3 {
-    color: var(--primary-red);
+    color: white;
     border-bottom: none; /* Override default h2 style */
     margin-bottom: 20px;
 }
@@ -368,7 +369,7 @@ a:hover {
 }
 
 .footer a {
-    color: var(--muted-text);
+    color: #fff;
     font-weight: normal;
 }
 .footer a:hover {
@@ -389,11 +390,11 @@ a:hover {
 }
 
 .footer-bottom {
-    border-top: 1px solid #495057;
+    border-top: 1px solid white;
     margin-top: 30px;
     padding-top: 30px;
     font-size: 0.9rem;
-    color: var(--muted-text);
+    color: #fff;
 }
 
 /* --- 7. Responsive Design --- */
