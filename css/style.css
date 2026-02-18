@@ -225,7 +225,8 @@ a:hover {
   font-size: 4rem;
   color: var(--pure-white);
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 8px rgba(233, 10, 10, 0.861);
+  margin-top: 10rem;
 }
 
 .hero-content p {
@@ -680,39 +681,234 @@ a:hover {
     margin-top: 40px;
 }
 
-.benefit-card {
+.card {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(232, 8, 8, 0.856);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.benefit-card:hover {
+.card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px #f60404f6;
+    background: #f5f4f4;
 }
 
-.benefit-card i {
+.card i {
     font-size: 3rem;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-.benefit-card h3 {
+.card h3 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: var(--dark-color);
+    color: red;
 }
 
-.benefit-card p {
+.card p {
     color: #666;
     line-height: 1.6;
 }
 
+.btn-outline:hover{
+  background: rgb(151, 8, 8);
+}
+.btn-outline{
+  background: rgb(248, 245, 245);
+}
 /* --- Add this to your css/style.css file, preferably near the top --- */
 
 h1, h2, h3, h4, h5, h6 {
     color: #c0392b; /* A professional, strong red color */
+}
+
+
+/* News letter section */
+.news-letter button{
+  background: linear-gradient(135deg, #1e3c72,#2a5298);
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* heading */
+.news-letter button h3{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* paragraph */
+.news-letter button p{
+  font-size: 16px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* form */
+.news-letter form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+/* input field*/
+.news-letter input{
+  padding: 12px 15px;
+  width: 70%;
+  max-width: 350px;
+  border: #d91608;
+  border-radius: 30x;
+  outline: none;
+  font-size: 14px;
+
+}
+
+/* button */
+.news-letter button{
+  padding: 12px 15px;
+  border: none;
+  border-radius: 30px;
+  background: #cf0645;
+  columns: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+/* button hover */
+ .news-letter button:hover{
+  background: #fff;
+  color: #2a5298;
+ }
+
+ /* responsiveness */
+ @media (max-width:500px){
+  .news-letter form{
+    flex-direction: column;
+  }
+  .news-letter input[types="email"]{
+    width: 100%;
+  } 
+  .news-letter button {
+    width: 100%;
+  }
+  
+ }
+
+ .page-header {
+    background: #ad0505;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+}
+
+
+/* ================= CORE VALUES ================= */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #e80909;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.core-values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.core-value-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px red;
+    transition: 0.3s ease;
+}
+
+.core-value-card i {
+    font-size: 36px;
+    color: #366184;
+    margin-bottom: 15px;
+}
+
+.core-value-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #f40707;
+}
+
+.core-value-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.core-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background: rgb(224, 109, 109);
+}
+
+
+/* About tab styles */
+.abt-h1{
+  margin-top: 10px;
+  padding: 30px;
+text-align: center;
+color: #898484;
+}
+
+/* Academics tab   */
+.academics-h1 {
+text-align: center;
+margin-top: 15px;
+color: #898484;
+}
+
+/* ================= SCHOOL OVERVIEW CARDS ================= */
+.school-overview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.overview-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview-card h3 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    font-size: 20px;
+}
+
+.overview-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
