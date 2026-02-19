@@ -404,6 +404,9 @@ a:hover {
     display: flex;
   }
 
+.navbar .logo {
+text-size: 1.4rem;
+}
   .nav-list {
     position: fixed;
     left: -100%;
